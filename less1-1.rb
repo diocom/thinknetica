@@ -4,15 +4,14 @@ puts "Hello, input you first name"              #запрос ввода име�
 you_name = gets.chomp				#ждем ввода имени
 puts "Hi #{you_name}! Input you height in cm"
 height = gets.chomp.to_i			#ждем рост
-weight = height-110				#вычисляем вес
-if height > 47&&height < 273		        #проверяем введенный рост
-  if weight < 0
-   puts "You weight is optimal:)"
+
+weight = height - 110				#вычисляем вес
+
+if weight < 0
+    puts "You weight is optimal:)"
   else
-   puts "You weight is NOT optimal!!!"
-  end
-else
-  puts "Error! Wrong height #{height.to_s}"
+    puts "You weight is NOT optimal!!!"
 end
+
 
 
